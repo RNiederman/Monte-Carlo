@@ -19,7 +19,7 @@ Scream <- function(n = 5, cast.size = 3) {
 
 runs <- 999999 + 1
 
-Q <- pbreplicate(runs, Scream(5, 3) )
+Q <- pbreplicate(runs, Scream(5, 3))
 
 which(Q>=2) %>% length %>% divide_by(length(Q)) %>% as.percent(2)
 table(Q)
