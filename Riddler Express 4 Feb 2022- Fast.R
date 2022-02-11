@@ -21,6 +21,7 @@ Scream <- function(cast.size = 3) {
   Correct <- sum(Guess %in% Cast)
   return(Correct)
 }
+
 runs <- 999999 + 1
 
 Starter <- Sys.time()
